@@ -3,4 +3,4 @@
  *
  * @author Yadickson Soto
  */
-package com.basedos.seguridad.exception;
+package com.github.yadickson.security.exception;

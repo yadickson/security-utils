@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.util;
+package com.github.yadickson.security.util;
 
 import java.io.InputStream;
 import java.security.KeyFactory;
@@ -17,7 +17,7 @@ import javax.xml.bind.DatatypeConverter;
 
 import org.springframework.stereotype.Component;
 
-import com.basedos.seguridad.exception.CertificateException;
+import com.github.yadickson.security.exception.CertificateException;
 import java.security.PublicKey;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
@@ -70,7 +70,7 @@ public final class KeyManagerImpl implements KeyManager {
      *
      * @param stream entrada de archivo certificado.
      * @return clave publica.
-     * @throws CertificateException si existe error.
+     * @throws CertificateException if error.
      */
     @Override
     public PublicKey getPublicKey(

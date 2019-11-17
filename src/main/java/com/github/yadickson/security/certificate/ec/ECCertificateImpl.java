@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.certificate.ec;
+package com.github.yadickson.security.certificate.ec;
 
 import java.io.InputStream;
 import java.security.PrivateKey;
@@ -11,10 +11,10 @@ import java.security.PublicKey;
 
 import org.springframework.stereotype.Component;
 
-import com.basedos.seguridad.certificate.Certificate;
-import com.basedos.seguridad.exception.CertificateException;
+import com.github.yadickson.security.certificate.Certificate;
+import com.github.yadickson.security.exception.CertificateException;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.basedos.seguridad.util.KeyManager;
+import com.github.yadickson.security.util.KeyManager;
 
 /**
  * Clase para manipulacion de certificados RSA.
@@ -35,7 +35,7 @@ public final class ECCertificateImpl implements Certificate {
      *
      * @param stream entrada de archivo certificado.
      * @return clave publica.
-     * @throws CertificateException si existe error.
+     * @throws CertificateException if error.
      */
     @Override
     public PublicKey getPublicKey(
@@ -49,7 +49,7 @@ public final class ECCertificateImpl implements Certificate {
      *
      * @param stream entrada de archivo privado.
      * @return clave privada.
-     * @throws CertificateException si existe error.
+     * @throws CertificateException if error.
      */
     @Override
     public PrivateKey getPrivateKey(

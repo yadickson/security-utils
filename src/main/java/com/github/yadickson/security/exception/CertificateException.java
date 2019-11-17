@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.exception;
+package com.github.yadickson.security.exception;
 
 /**
  * Clase para el manejo de excepciones por procesamiento de certificado.
  *
  * @author Yadickson Soto
  */
+@SuppressWarnings({"serial"})
 public final class CertificateException extends Exception {
 
     /**

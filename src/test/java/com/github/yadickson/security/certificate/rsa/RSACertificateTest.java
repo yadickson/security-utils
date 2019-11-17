@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.certificate.rsa;
+package com.github.yadickson.security.certificate.rsa;
 
-import com.basedos.seguridad.util.*;
-import com.basedos.seguridad.exception.CertificateException;
+import com.github.yadickson.security.util.*;
+import com.github.yadickson.security.exception.CertificateException;
 import java.io.InputStream;
 import java.security.PrivateKey;
 import java.security.PublicKey;

@@ -1,6 +1,6 @@
 /**
- * Paquete para clases de manejo de certificados.
+ * Handler certificate package.
  *
  * @author Yadickson Soto
  */
-package com.basedos.seguridad.certificate;
+package com.github.yadickson.security.certificate;

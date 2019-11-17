@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.util;
+package com.github.yadickson.security.util;
 
 import java.io.InputStream;
 import java.security.PrivateKey;
 
-import com.basedos.seguridad.exception.CertificateException;
+import com.github.yadickson.security.exception.CertificateException;
 import java.security.PublicKey;
 
 /**
@@ -34,7 +34,7 @@ public interface KeyManager {
      *
      * @param stream entrada de archivo certificado.
      * @return clave publica.
-     * @throws CertificateException si existe error.
+     * @throws CertificateException if error.
      */
     PublicKey getPublicKey(
             final InputStream stream

@@ -3,4 +3,4 @@
  *
  * @author Yadickson Soto
  */
-package com.basedos.seguridad.jwt;
+package com.github.yadickson.security.jwt;

@@ -3,4 +3,4 @@
  *
  * @author Yadickson Soto
  */
-package com.basedos.seguridad.util;
+package com.github.yadickson.security.util;

@@ -3,4 +3,4 @@
  *
  * @author Yadickson Soto
  */
-package com.basedos.seguridad.certificate.rsa;
+package com.github.yadickson.security.certificate.rsa;

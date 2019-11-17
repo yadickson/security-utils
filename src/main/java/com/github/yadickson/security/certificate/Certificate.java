@@ -3,37 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.certificate;
+package com.github.yadickson.security.certificate;
 
-import com.basedos.seguridad.exception.CertificateException;
+import com.github.yadickson.security.exception.CertificateException;
 import java.io.InputStream;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
 /**
- * Interfaz para manipular certificados.
+ * Interface to handler certificates.
  *
  * @author Yadickson Soto
  */
 public interface Certificate {
 
     /**
-     * Obtener clave publica.
+     * Getter public key.
      *
-     * @param stream entrada de archivo certificado.
-     * @return clave publica.
-     * @throws CertificateException si existe error.
+     * @param stream certificate input stream.
+     * @return public key.
+     * @throws CertificateException if error.
      */
     PublicKey getPublicKey(
             final InputStream stream
     ) throws CertificateException;
 
     /**
-     * Obtener clave privada.
+     * Getter private key.
      *
-     * @param stream entrada de archivo de clave privada.
-     * @return clave privada.
-     * @throws CertificateException si existe error.
+     * @param stream certificate input stream.
+     * @return private key.
+     * @throws CertificateException if error.
      */
     PrivateKey getPrivateKey(
             final InputStream stream

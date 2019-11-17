@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.basedos.seguridad.certificate;
+package com.github.yadickson.security.certificate;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
