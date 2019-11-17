@@ -1,5 +1,5 @@
 /**
- * Paquete para clases de excepciones.
+ * The exceptions package.
  *
  * @author Yadickson Soto
  */
