@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.yadickson.test</groupId>
+    <artifactId>test</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+    
+    <name>test</name>
+    <description>test</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    
+    <build>
+        <plugins>
+            
+            <plugin>
+                <groupId>com.github.yadickson</groupId>
+                <artifactId>autocert</artifactId>
+                <version>1.1.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generator</goal>
+                        </goals>
+                        <configuration>
+                            <pubFile>pub.pem</pubFile>
+                            <keyFile>key.pem</keyFile>
+                            <certFile>cert.pem</certFile>
+                            <algorithm>ECDSA</algorithm>
+                            <signature>SHA256withECDSA</signature>
+                            <keySize>521</keySize>
+                            <years>1</years>
+                            <directory>.</directory>
+                            <outputDirectory>../../testEC</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
