@@ -11,6 +11,18 @@ You can create pub.pem, key.pem and cert.pem with [maven autocert plugin](https:
 
 ```
 $ nano openssl.conf
+
+[req]
+distinguished_name = req_distinguished_name
+# req_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = Country
+ST = Stade
+L = Locale
+O = Organization
+OU = O
+CN = www.domain.com
 ```
 
 ### RSA
